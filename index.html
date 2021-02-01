@@ -1,0 +1,618 @@
+<!-- definition of html5 -->
+<!DOCTYPE html>
+<html lang="en">
+<!-- start head tag-->
+<head>
+    <!-- require meta tag to define the page-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- require css tag to add style to the website-->
+    <link rel="stylesheet" href="style.css" />
+    
+    <!-- title of the website-->
+    <title>MusicTech | E-commerce Website</title>
+    
+    <!-- google font to import utility fonts for the website-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    
+    <!-- bootstrap - fontawsome to import utility icons-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<!-- end head tag-->
+
+
+<!-- start body tag-->
+<body>
+    <!-- start header-->
+    <header>
+ <!-- start container of header to make it responsive -->
+        <div class="container">
+            
+            <!-- start navbar :
+            contain logo, links to rest of the pages and they are:
+            home,products,about us(team),contact,account-->
+            <div class="navbar">
+                <!-- start the logo of the page -->
+                 <div class="logo">
+                    <!-- anchor link lead to the main home when click on the logo-->
+                    <a href="index.html">
+                        <!-- website logo-->
+                        <h1 class="lg-title">Music<span>Tech</span></h1>
+                    </a>
+                </div>
+                 <!-- end the logo of the page-->
+                 
+                 
+                 <!-- start navbar: links to rest of the pages and they are:
+            home,products,about us(team),contact,account-->
+                <nav>
+                    
+                    <!--menu list-->
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products-page1.html">Products</a></li>
+                        <li><a href="">Our Team</a></li>
+                        <li><a href="">Contacts</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- add shopping cart outside navbar so when it get responsive it will show beside menubar-->
+                <a href="cart.html">
+
+                    <img src="images/icon/shopping-cart.png" alt="" width="40px" height="40px" />
+                </a>
+                <img src="images/menu.png" alt="" class="menu-icon" onclick="menutoggle();">
+            </div>
+            <!-- end navbar -->
+        </div>
+        <!--end container-->
+            
+            <!-- start weloming page
+            contain welcoming message and photo related with the website-->
+            
+            <!-- row class to make the section  responsive -->
+            <div class="row-1">
+                
+                <!-- put the welcome message in container to make it responsive inside the row class-->
+                <div class="col-2">
+                    <h1>Change your lens, <br />Change your Story.</h1>
+                    <p>
+                        When words becomes unclear, I shall focus with photographs.<br />When
+                        Images becomes inadequate, I shall be content with silence.
+                    </p>
+                    <a href="" class="btn">Explore Now &#8594;</a>
+                </div>
+                
+                <!-- put the welcome image in container to make it responsive inside the row class-->
+                <div class="col-2">
+                    <img src="images/welomeimg.png" alt="collage musical instruments" />
+                </div>
+                
+            </div>
+           <!-- end row welcome page--> 
+        </div>
+        <!-- end container -->
+    </header>
+    <!-- end header-->
+    
+    <!-- start category section this part will show the visitor/user the products in the website in brief
+    and the div for make it responsive-->
+    <div class="categories">
+        
+        <!-- start small container that make this part responsive-->
+        <div class="small-container">
+            <!--start row that is like container to make it responsive in the small container section-->
+            <div class="row">
+                <!-- start container that make the img reponsive in the row part-->
+                <div class="col-3">
+                    <img src="images/icon/icon1.jpg" alt="person with cello" />
+                </div>
+                <!-- end container-->
+                
+                <!-- start container that make the img reponsive in the row part-->
+                <div class="col-3">
+                    <img src="images/icon/icon2.jpg" alt="man play drums" />
+                </div>
+                <!-- end container -->
+                
+                <!-- start container that make the img reponsive in the row part-->
+                <div class="col-3">
+                    <img src="images/icon/icon3.jpg" alt="person plays saxphone" />
+                </div>
+                <!-- end container-->
+                
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end small container -->
+    </div>
+    <!-- end categories section-->
+    
+    <!-- start small container :
+    that container contain the featured products and latest products-->
+    <div class="small-container">
+        
+        <!-- start featured container :
+        this part include the most special products in the website-->
+        <h2 class="title">Featured Products</h2>
+        
+        <!-- start row to make this part responsive-->
+        <div class="row">
+            
+            <!-- start single product-->
+            <div class="col-4">
+                <a href="product-details.html">
+
+                    <img src="images/guitars/guitar-1.png" alt="guitar lifestyle" />
+                </a>
+                <a href="product-details.html">
+
+                    <h4>Cavaliers SweatShirt by Nike</h4>
+                </a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$3695.00</p>
+            </div>
+            <!-- end single product-->
+            
+            <!--start single product-->
+            <div class="col-4">
+                <img src="images/violin/violin-1.png" alt="violin lifestyle" />
+                <h4>Polo Ralph Lauren</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$1299.00</p>
+            </div>
+            <!-- end single product -->
+            
+            <!-- start single product-->
+            <div class="col-4">
+                <img src="images/piano/piano-1.png" alt="piano lifestyle" />
+                <h4>Allen Solly Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$2369.00</p>
+            </div>
+            <!-- end single product-->
+            
+            <!--start single product-->
+            <div class="col-4">
+                <img src="images/guitars/guitar-2.png" alt="guitar lifestyle" />
+                <h4>H&M SweatShirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$1499.00</p>
+            </div>
+            <!-- end single product-->
+            
+        </div>
+        <!-- end row section-->
+        
+        <!-- start latest product:
+        this part show the latest products in the store-->
+        <h2 class="title">Latest Products</h2>
+        
+        <!-- start row to make the products responsive-->
+        <div class="row">
+            
+            <!-- start single product-->
+            <div class="col-4">
+                <img src="images/guitars/guitar-3.png" alt="guitar lifestyle" />
+                <h4>Calvin Klein Sweater</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$4199.00</p>
+            </div>
+            <!-- end single product-->
+            
+            <!-- start single product-->
+            <div class="col-4">
+                <img src="images/piano/piano-2.png" alt="piano lifestyle" />
+                <h4>SELECTED Blazer</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$11499.00</p>
+            </div>
+            <!-- end single product-->
+            
+            <!--start single product-->
+            <div class="col-4">
+                <img src="images/violin/violin-2.png" alt="violin lifestyle" />
+                <h4>Anubhutte Dress</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$988.00</p>
+            </div>
+            <!--end single product-->
+            
+            <!--start single product-->
+            <div class="col-4">
+                <img src="images/guitars/guitar-6.png" alt="guitar lifestyle" />
+                <h4>Biba Dress</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$3039.00</p>
+            </div>
+            <!--end single product-->
+            
+        </div>
+        <!--end row -->
+        
+        <!-- start row part to make it responsive-->
+        <div class="row">
+            
+            <!--start single product-->
+            <div class="col-4">
+                <img src="images/violin/violin-3.png" alt="violin lifestyle" />
+                <h4>Dorothy Perkins Skirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$1245.00</p>
+            </div>
+            <!-- end single product-->
+            
+            <!--start single product-->
+            <div class="col-4">
+                <img src="images/guitars/guitar-4.png" alt="guitar lifestyle" />
+                <h4>Bobbi Brown Cream</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$5600.00</p>
+            </div>
+            <!-- end of single product-->
+            
+            <!--start single product-->
+            <div class="col-4">
+                <img src="images/accessor/access-4.png" alt="accessories lifestyle" />
+                <h4>Access Her necklace</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$39500.00</p>
+            </div>
+            <!--end of single product-->
+            
+            <!--start single product-->
+            <div class="col-4">
+                <img src="images/guitars/guitar-8.png" alt="guitar lifestyle" />
+                <h4>Fossil Smart Watch</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$14296.00</p>
+            </div>
+            <!-- end single product-->
+        
+        </div>
+        <!-- end row-->
+        
+    </div>
+    <!--end Small container-->
+    
+    <!-- start offer section:
+    this part will show visitor/user the offers that the website/company produce-->
+    <div class="offer">
+        
+        <!-- start small container part to make this part responsive-->
+        <div class="small-container">
+            
+            <!-- start row to make it responsive inside the small container-->
+            <div class="row">
+                
+                <!-- start put offer image -->
+                <div class="col-2">
+                    <img src="images/icon/offer-img.png" alt="saxphone lifestyle" class="offer-img" />
+                </div>
+                <!-- end image section-->
+                
+                <!-- start put information about the offer product-->
+                <div class="col-2">
+                    <p>Exclusively Available on NILARA</p>
+                    <h1>Apple watch series 5</h1>
+                    <small>
+                        With a new Always-On Retina display, Apple Watch Series 5 is
+                        always there for you. To monitor your health, help you stay fit
+                        and keep you connected.
+                    </small>
+                    <a href="#" class="btn">Buy Now &#8594;</a>
+                </div>
+                <!-- end information part-->
+                
+            </div>
+            <!--end row-->
+            
+        </div>
+        <!-- end small container-->
+        
+    </div>
+    <!-- end offer section-->
+    
+    <!-- start review section:
+    this part show some reviews about the website
+    *this div to make this part responsive-->
+    <div class="testimonial">
+        
+        <!-- start small container to make the part responsive-->
+        <div class="small-container">
+            
+            <!-- start row -->
+            <div class="row">
+                
+                <!-- start review section-->
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                        temporibus non sapiente nemo autem illo! Ea sunt corporis officia
+                        inventore.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <img src="images/icon/user-1.png" alt="client review">
+                    <h3>Nilay Hirpara</h3>
+                </div>
+                <!-- end review section-->
+                
+                <!--start review section-->
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                        temporibus non sapiente nemo autem illo! Ea sunt corporis officia
+                        inventore.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <img src="images/icon/user-1.png" alt="client review">
+                    <h3>Pranav Badgal</h3>
+                </div>
+                <!--end review section-->
+                
+                <!-- start review section-->
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                        temporibus non sapiente nemo autem illo! Ea sunt corporis officia
+                        inventore.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <img src="images/icon/user-1.png" alt="client review">
+                    <h3>Navnit Kumar</h3>
+                </div>
+                <!--end review section-->
+                
+            </div>
+            <!-- end row section-->
+            
+        </div>
+        <!--end small container-->
+        
+    </div>
+    <!-- end review part -->
+    
+    
+    <!-- start brand section:
+    this part contain the logo brands that produce the website
+    *this div to make the part responsive-->
+    <div class="brands">
+        
+        <!-- this small container to make the website responsive-->
+        <div class="small-container">
+            
+            <!-- this row part to make it responsive inside the small container-->
+            <div class="row">
+                
+                <!--start logo -->
+                <div class="col-5">
+                    <img src="images/icon/logo-1.jpg" alt="logo">
+                </div>
+                <!--end logo-->
+                
+                <!--start logo-->
+                <div class="col-5">
+                    <img src="images/icon/logo-2.jpg" alt="logo">
+                </div>
+                <!--end logo-->
+                
+                <!--start logo-->
+                <div class="col-5">
+                    <img src="images/icon/logo-3.jpg" alt="logo">
+                </div>
+                <!--end logo-->
+                
+                <!--start logo-->
+                <div class="col-5">
+                    <img src="images/icon/logo-4.jpg" alt="logo">
+                </div>
+                <!--end logo-->
+                
+                <!--start logo-->
+                <div class="col-5">
+                    <img src="images/icon/logo-5.jpg" alt="logo">
+                </div>
+                <!--end logo-->
+
+            </div>
+            <!-- end row part-->
+            
+             <!-- this row part to make it responsive inside the small container-->
+            <div class="row">
+                
+                <!--start logo -->
+                <div class="col-5">
+                    <img src="images/icon/logo-6.jpg" alt="logo">
+                </div>
+                <!--end logo-->
+                
+                <!--start logo-->
+                <div class="col-5">
+                    <img src="images/icon/logo-7.jpg" alt="logo">
+                </div>
+                <!--end logo-->
+                
+                <!--start logo-->
+                <div class="col-5">
+                    <img src="images/icon/logo-8.jpg" alt="logo">
+                </div>
+                <!--end logo-->
+                
+                <!--start logo-->
+                <div class="col-5">
+                    <img src="images/icon/logo-9.jpg" alt="logo">
+                </div>
+                <!--end logo-->
+                
+                <!--start logo-->
+                <div class="col-5">
+                    <img src="images/icon/logo-10.jpg" alt="logo">
+                </div>
+                <!--end logo-->
+
+            </div>
+            <!-- end row part-->
+            
+        </div>
+        <!-- end small container-->
+        
+    </div>
+    <!-- end brand section-->
+
+    <!-- footer page-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download App for Andriod and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/icon/google-play.png" alt="play store">
+                        <img src="images/icon/app-store.png" alt="app store">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/main-logo.png" alt="">
+                    <p>Our purpose is to give the best quality product to the customer and bring them back and make them
+                        happy.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright &copy; 2020 - www.musicTech.com</p>
+        </div>
+    </footer>
+
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>

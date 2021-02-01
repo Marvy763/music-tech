@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicTech | Products</title>
+    <link rel="stylesheet" href="substyle.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <!-- start container of header to make it responsive -->
+        <div class="container">
+            
+            <!-- start navbar :
+            contain logo, links to rest of the pages and they are:
+            home,products,about us(team),contact,account-->
+            <div class="navbar">
+                <!-- start the logo of the page -->
+                 <div class="logo">
+                    <!-- anchor link lead to the main home when click on the logo-->
+                    <a href="index.html">
+                        <!-- website logo-->
+                        <h1 class="lg-title">Music<span>Tech</span></h1>
+                    </a>
+                </div>
+                 <!-- end the logo of the page-->
+                 
+                 
+                 <!-- start navbar: links to rest of the pages and they are:
+            home,products,about us(team),contact,account-->
+                <nav>
+                    
+                    <!--menu list-->
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="">Our Team</a></li>
+                        <li><a href="">Contacts</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- add shopping cart outside navbar so when it get responsive it will show beside menubar-->
+                <a href="cart.html">
+
+                    <img src="images/icon/shopping-cart.png" alt="" width="40px" height="40px" />
+                </a>
+                <img src="images/icon/menu.png" alt="" class="menu-icon" onclick="menutoggle();">
+            </div>
+            <!-- end navbar -->
+        </div>
+        <!--end container-->
+   
+
+
+    <div class="small-container">
+        <div class="row row-2">
+            
+            <!--filter items-->
+            <div class="items">
+                <span class="item active" data-name="all">All</span>
+                <span class="item" data-name="piano">Piano</span>
+                <span class="item" data-name="guitar">Guitar</span>
+                <span class="item" data-name="saxophone">Saxophone</span>
+                <span class="item" data-name="drums">Drums</span>
+                <span class="item" data-name="violin">Violin</span>
+                <span class="item" data-name="accessor">Accessories</span>
+            </div>
+            <select>
+                <option>Default Sorting</option>
+                <option>Price Low to High</option>
+                <option>Price High to Low</option>
+                <option>By Rating</option>
+            </select>
+        </div>
+        
+  <div class="wrapper">
+   
+    <!-- filter Images -->
+    <div class="gallery">
+      
+      <!--start single product-->
+      <div class="image" data-name="piano">
+        <div class="single-product">
+              <h4>25% off</h4>
+          <span class="product-image">
+            <img src="images/piano/piano-5.png" alt="piano lifestyle">
+          </span>
+          <div class = "product-btns">
+            <button type="button" class="view-product">
+              <i class="far fa-eye fa-lg"></i>
+            </button>
+            <button type="button" class="btn-cart">
+              <i class="fas fa-cart-plus fa-lg"></i>
+                add to cart
+          </button>
+        </div>
+      </div>
+      <span class="product-info">
+        <h3>Allen Solly Shirt</h3>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div id="sub">
+            <p class = "product-price">$ 150.00</p>
+            <p class = "product-price">$ 133.00</p>
+            
+            </div>
+            
+      </span>
+      </div>
+      <!-- end single product-->
+      
+      <!--start single product-->
+      <div class="image" data-name="violin">
+        <div class="single-product">
+              <h4>25% off</h4>
+          <span class="product-image">
+            <img src="images/violin/violin-5.png" alt="violin lifestyle">
+          </span>
+          <div class = "product-btns">
+            <button type="button" class="view-product">
+              <i class="far fa-eye fa-lg"></i>
+            </button>
+            <button type="button" class="btn-cart">
+              <i class="fas fa-cart-plus fa-lg"></i>
+                add to cart
+          </button>
+        </div>
+      </div>
+      <span class="product-info">
+        <h3>Allen Solly Shirt</h3>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div id="sub">
+            <p class = "product-price">$ 150.00</p>
+            <p class = "product-price">$ 133.00</p>
+            
+            </div>
+            
+      </span>
+      </div>
+      <!-- end single product-->
+      
+      <!--start single product-->
+      <div class="image" data-name="guitar">
+        <div class="single-product">
+              <h4>25% off</h4>
+          <span class="product-image">
+            <img src="images/guitars/guitar-6.png" alt="guitar lifestyle">
+          </span>
+          <div class = "product-btns">
+            <button type="button" class="view-product">
+              <i class="far fa-eye fa-lg"></i>
+            </button>
+            <button type="button" class="btn-cart">
+              <i class="fas fa-cart-plus fa-lg"></i>
+                add to cart
+          </button>
+        </div>
+      </div>
+      <span class="product-info">
+        <h3>Allen Solly Shirt</h3>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div id="sub">
+            <p class = "product-price">$ 150.00</p>
+            <p class = "product-price">$ 133.00</p>
+            
+            </div>
+            
+      </span>
+      </div>
+      <!-- end single product-->
+      
+      <!--start single product-->
+      <div class="image" data-name="saxophone">
+        <div class="single-product">
+              <h4>25% off</h4>
+          <span class="product-image">
+            <img src="images/saxophone/saxophone-1.png" alt="saxophone lifestyle">
+          </span>
+          <div class = "product-btns">
+            <button type="button" class="view-product">
+              <i class="far fa-eye fa-lg"></i>
+            </button>
+            <button type="button" class="btn-cart">
+              <i class="fas fa-cart-plus fa-lg"></i>
+                add to cart
+          </button>
+        </div>
+      </div>
+      <span class="product-info">
+        <h3>Allen Solly Shirt</h3>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div id="sub">
+            <p class = "product-price">$ 150.00</p>
+            <p class = "product-price">$ 133.00</p>
+            
+            </div>
+            
+      </span>
+      </div>
+      <!-- end single product-->
+     
+     <!--start single product-->
+      <div class="image" data-name="drums">
+        <div class="single-product">
+              <h4>25% off</h4>
+          <span class="product-image">
+            <img src="images/drums/drum-1.png" alt="drums lifestyle">
+          </span>
+          <div class = "product-btns">
+            <button type="button" class="view-product">
+              <i class="far fa-eye fa-lg"></i>
+            </button>
+            <button type="button" class="btn-cart">
+              <i class="fas fa-cart-plus fa-lg"></i>
+                add to cart
+          </button>
+        </div>
+      </div>
+      <span class="product-info">
+        <h3>Allen Solly Shirt</h3>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div id="sub">
+            <p class = "product-price">$ 150.00</p>
+            <p class = "product-price">$ 133.00</p>
+            
+            </div>
+            
+      </span>
+      </div>
+      <!-- end single product-->
+      
+      <!--start single product-->
+      <div class="image" data-name="guitar">
+        <div class="single-product">
+              <h4>25% off</h4>
+          <span class="product-image">
+            <img src="images/guitars/guitar-6.png" alt="guitar lifestyle">
+          </span>
+          <div class = "product-btns">
+            <button type="button" class="view-product">
+              <i class="far fa-eye fa-lg"></i>
+            </button>
+            <button type="button" class="btn-cart">
+              <i class="fas fa-cart-plus fa-lg"></i>
+                add to cart
+          </button>
+        </div>
+      </div>
+      <span class="product-info">
+        <h3>Allen Solly Shirt</h3>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div id="sub">
+            <p class = "product-price">$ 150.00</p>
+            <p class = "product-price">$ 133.00</p>
+            
+            </div>
+            
+      </span>
+      </div>
+      <!-- end single product-->
+      
+      <!--start single product-->
+      <div class="image" data-name="piano">
+        <div class="single-product">
+              <h4>25% off</h4>
+          <span class="product-image">
+            <img src="images/piano/piano-6.png" alt="piano lifestyle">
+          </span>
+          <div class = "product-btns">
+            <button type="button" class="view-product">
+              <i class="far fa-eye fa-lg"></i>
+            </button>
+            <button type="button" class="btn-cart">
+              <i class="fas fa-cart-plus fa-lg"></i>
+                add to cart
+          </button>
+        </div>
+      </div>
+      <span class="product-info">
+        <h3>Allen Solly Shirt</h3>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div id="sub">
+            <p class = "product-price">$ 150.00</p>
+            <p class = "product-price">$ 133.00</p>
+            
+            </div>
+            
+      </span>
+      </div>
+      <!-- end single product-->
+      
+      <!--start single product-->
+      <div class="image" data-name="violin">
+        <div class="single-product">
+              <h4>25% off</h4>
+          <span class="product-image">
+            <img src="images/violin/violin-6.png" alt="violin lifestyle">
+          </span>
+          <div class = "product-btns">
+            <button type="button" class="view-product">
+              <i class="far fa-eye fa-lg"></i>
+            </button>
+            <button type="button" class="btn-cart">
+              <i class="fas fa-cart-plus fa-lg"></i>
+                add to cart
+          </button>
+        </div>
+      </div>
+      <span class="product-info">
+        <h3>Allen Solly Shirt</h3>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div id="sub">
+            <p class = "product-price">$ 150.00</p>
+            <p class = "product-price">$ 133.00</p>
+            
+            </div>
+            
+      </span>
+      </div>
+      <!-- end single product-->
+      
+      <!--start single product-->
+      <div class="image" data-name="drums">
+        <div class="single-product">
+              <h4>25% off</h4>
+          <span class="product-image">
+            <img src="images/drums/drum-2.png" alt="drums lifestyle">
+          </span>
+          <div class = "product-btns">
+            <button type="button" class="view-product">
+              <i class="far fa-eye fa-lg"></i>
+            </button>
+            <button type="button" class="btn-cart">
+              <i class="fas fa-cart-plus fa-lg"></i>
+                add to cart
+          </button>
+        </div>
+      </div>
+      <span class="product-info">
+        <h3>Allen Solly Shirt</h3>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div id="sub">
+            <p class = "product-price">$ 150.00</p>
+            <p class = "product-price">$ 133.00</p>
+            
+            </div>
+            
+      </span>
+      </div>
+      <!-- end single product-->
+      
+      <!--start single product-->
+      <div class="image" data-name="piano">
+        <div class="single-product">
+              <h4>25% off</h4>
+          <span class="product-image">
+            <img src="images/piano/piano-6.png" alt="piano lifestyle">
+          </span>
+          <div class = "product-btns">
+            <button type="button" class="view-product">
+              <i class="far fa-eye fa-lg"></i>
+            </button>
+            <button type="button" class="btn-cart">
+              <i class="fas fa-cart-plus fa-lg"></i>
+                add to cart
+          </button>
+        </div>
+      </div>
+      <span class="product-info">
+        <h3>Allen Solly Shirt</h3>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div id="sub">
+            <p class = "product-price">$ 150.00</p>
+            <p class = "product-price">$ 133.00</p>
+            
+            </div>
+            
+      </span>
+      </div>
+      <!-- end single product-->
+      
+      <!--start single product-->
+      <div class="image" data-name="saxophone">
+        <div class="single-product">
+              <h4>25% off</h4>
+          <span class="product-image">
+            <img src="images/saxophone/saxophone-2.png" alt="saxophone lifestyle">
+          </span>
+          <div class = "product-btns">
+            <button type="button" class="view-product">
+              <i class="far fa-eye fa-lg"></i>
+            </button>
+            <button type="button" class="btn-cart">
+              <i class="fas fa-cart-plus fa-lg"></i>
+                add to cart
+          </button>
+        </div>
+      </div>
+      <span class="product-info">
+        <h3>Allen Solly Shirt</h3>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div id="sub">
+            <p class = "product-price">$ 150.00</p>
+            <p class = "product-price">$ 133.00</p>
+            
+            </div>
+            
+      </span>
+      </div>
+      <!-- end single product-->
+      
+      <!--start single product-->
+      <div class="image" data-name="guitar">
+        <div class="single-product">
+              <h4>25% off</h4>
+          <span class="product-image">
+            <img src="images/guitars/guitar-7.png" alt="guitar lifestyle">
+          </span>
+          <div class = "product-btns">
+            <button type="button" class="view-product">
+              <i class="far fa-eye fa-lg"></i>
+            </button>
+            <button type="button" class="btn-cart">
+              <i class="fas fa-cart-plus fa-lg"></i>
+                add to cart
+          </button>
+        </div>
+      </div>
+      <span class="product-info">
+        <h3>Allen Solly Shirt</h3>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div id="sub">
+            <p class = "product-price">$ 150.00</p>
+            <p class = "product-price">$ 133.00</p>
+            
+            </div>
+            
+      </span>
+      </div>
+      <!-- end single product-->
+      
+      <!--start single product-->
+      <div class="image" data-name="piano">
+        <div class="single-product">
+              <h4>25% off</h4>
+          <span class="product-image">
+            <img src="images/piano/piano-7.png" alt="piano lifestyle">
+          </span>
+          <div class = "product-btns">
+            <button type="button" class="view-product">
+              <i class="far fa-eye fa-lg"></i>
+            </button>
+            <button type="button" class="btn-cart">
+              <i class="fas fa-cart-plus fa-lg"></i>
+                add to cart
+          </button>
+        </div>
+      </div>
+      <span class="product-info">
+        <h3>Allen Solly Shirt</h3>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div id="sub">
+            <p class = "product-price">$ 150.00</p>
+            <p class = "product-price">$ 133.00</p>
+            
+            </div>
+            
+      </span>
+      </div>
+      <!-- end single product-->
+      
+      <!--start single product-->
+      <div class="image" data-name="saxophone">
+        <div class="single-product">
+              <h4>25% off</h4>
+          <span class="product-image">
+            <img src="images/saxophone/saxophone-3.png" alt="saxophone lifestyle">
+          </span>
+          <div class = "product-btns">
+            <button type="button" class="view-product">
+              <i class="far fa-eye fa-lg"></i>
+            </button>
+            <button type="button" class="btn-cart">
+              <i class="fas fa-cart-plus fa-lg"></i>
+                add to cart
+          </button>
+        </div>
+      </div>
+      <span class="product-info">
+        <h3>Allen Solly Shirt</h3>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div id="sub">
+            <p class = "product-price">$ 150.00</p>
+            <p class = "product-price">$ 133.00</p>
+            
+            </div>
+            
+      </span>
+      </div>
+      <!-- end single product-->
+      
+      <!--start single product-->
+      <div class="image" data-name="drums">
+        <div class="single-product">
+              <h4>25% off</h4>
+          <span class="product-image">
+            <img src="images/drums/drum-3.png" alt="drums lifestyle">
+          </span>
+          <div class = "product-btns">
+            <button type="button" class="view-product">
+              <i class="far fa-eye fa-lg"></i>
+            </button>
+            <button type="button" class="btn-cart">
+              <i class="fas fa-cart-plus fa-lg"></i>
+                add to cart
+          </button>
+        </div>
+      </div>
+      <span class="product-info">
+        <h3>Allen Solly Shirt</h3>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div id="sub">
+            <p class = "product-price">$ 150.00</p>
+            <p class = "product-price">$ 133.00</p>
+            
+            </div>
+            
+      </span>
+      </div>
+      <!-- end single product-->
+      
+      <!--start single product-->
+      <div class="image" data-name="guitar">
+        <div class="single-product">
+              <h4>25% off</h4>
+          <span class="product-image">
+            <img src="images/guitars/guitar-8.png" alt="guitar lifestyle">
+          </span>
+          <div class = "product-btns">
+            <button type="button" class="view-product">
+              <i class="far fa-eye fa-lg"></i>
+            </button>
+            <button type="button" class="btn-cart">
+              <i class="fas fa-cart-plus fa-lg"></i>
+                add to cart
+          </button>
+        </div>
+      </div>
+      <span class="product-info">
+        <h3>Allen Solly Shirt</h3>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div id="sub">
+            <p class = "product-price">$ 150.00</p>
+            <p class = "product-price">$ 133.00</p>
+            
+            </div>
+            
+      </span>
+      </div>
+      <!-- end single product-->
+      
+      
+    </div>
+      
+  </div>
+    
+    <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>&#8594;</span>
+        </div>
+  </div>
+
+  <script src="script.js"></script>
+   <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+</html>
